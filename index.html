@@ -1,0 +1,184 @@
+<!-- LA IDEA DE ESTE PROYECTO ES REALIZAR UN SIMULADOR DE UNA ENTREVISTA LABORAL, HACIENDO ALGUNAS DE LAS TIPICAS 
+ PREGUNTAS QUE SUELEN REALIZAR LOS RECLUTADORES EN LAS PRIMERAS ESTAPAS DEL PROCESO.
+ ESTA CONSTRUIDO PARA PODER SABER LO BASICO DE LA PERSONA, ANTES DE LLEGAR A LAS INSTANCIAS MAS AVANZADAS. 
+ PODRIA DESCRIBIRSE COMO UN PRIMER FILTRO PARA LA ENTREVISTA PRESENCIAL Y/O VIRTUAL..  -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Simulador de Entrevista Laboral</title>
+     <link rel="stylesheet" href="./CSS/estilos.css">
+     <style>
+         /* Estilos generales para el cuerpo y estructura */
+         html, body {
+             margin: 0;
+             padding: 0;
+             height: 100%;
+             width: 100%; /* Asegurar que ocupe toda la pantalla */
+         }
+ 
+         body {
+             display: flex;
+             flex-direction: column;
+             min-height: 100vh;
+         }
+ 
+         main {
+             flex: 2;
+         }
+ 
+         .container {
+             text-align: center;
+             padding: 40px;
+         }
+ 
+         /* Estilos para el mini navegador */
+         #miniNav {
+             background: linear-gradient(45deg, #3a6186, #89253e);
+             color: #fff;
+             font-family: 'Arial', sans-serif;
+             padding: 15px 0;
+             width: 100%; /* Ocupa todo el largo del sitio */
+             box-sizing: border-box; /* Incluye el padding dentro del ancho */
+             position: relative;
+         }
+ 
+         #miniNav .nav-container {
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+         }
+ 
+         #miniNav .nav-container a {
+             color: #ffd700;
+             text-decoration: none;
+             font-size: 12px;
+             padding: 0 15px;
+             transition: color 0.3s;
+         }
+ 
+         #miniNav .nav-container a:hover {
+             color: #ffffff;
+         }
+ 
+         footer {
+             background: linear-gradient(45deg, #3a6186, #89253e);
+             color: #fff;
+             font-family: 'Arial', sans-serif;
+             padding: 20px 0;
+             width: 100vw; /* Asegura que ocupe todo el ancho visible */
+             margin: 0;
+             box-sizing: border-box; /* Incluir padding dentro del ancho total */
+             position: relative;
+         }
+ 
+         .footer-container {
+             display: flex;
+             justify-content: space-between;
+             max-width: 100%;
+             flex-wrap: wrap;
+         }
+ 
+         .footer-section {
+             flex: 1;
+             min-width: 120px;
+             margin: 5px;
+         }
+ 
+         .footer-section h3 {
+             font-size: 14px;
+             color: #ffd700;
+         }
+ 
+         .footer-section p,
+         .footer-section ul {
+             font-size: 11px;
+             line-height: 1.3;
+         }
+ 
+         .footer-section ul {
+             list-style-type: none;
+             padding: 0;
+             margin: 0;
+         }
+ 
+         .footer-section ul li {
+             margin: 2px 0;
+         }
+ 
+         .footer-section ul li a {
+             color: #ffd700;
+             text-decoration: none;
+             transition: color 0.3s;
+         }
+ 
+         .footer-section ul li a:hover {
+             color: #ffffff;
+         }
+ 
+         .footer-bottom {
+             text-align: center;
+             font-size: 11px;
+             border-top: 1px solid #fff;
+             padding-top: 10px;
+             margin-top: 10px;
+         }
+ 
+         .footer-bottom p {
+             margin: 0;
+         }
+     </style>
+ </head>
+ <body>
+ 
+     <!-- Mini navegador arriba -->
+     <div id="miniNav">
+         <div class="nav-container">
+             <a href="#home">Inicio</a>
+             <a href="#about">Nosotros</a>
+             <a href="#services">Servicios</a>
+             <a href="#contact">Contacto</a>
+         </div>
+     </div>
+ 
+     <main>
+         <div class="container">
+             <h1>Bienvenido a nuestro Simulador de Entrevista Laboral</h1>
+             <button onclick="iniciarSimulador()">Iniciar Entrevista</button>
+             <div id="tarjetaResultado"></div>
+         </div>
+     </main>
+ 
+     <footer>
+         <div class="footer-container">
+             <div class="footer-section">
+                 <h3>Sobre Nosotros</h3>
+                 <p>Somos una empresa dedicada a ofrecer los mejores trabajadores capacitados y profesionales
+                     entusiastas y compremetidos al servicio. Nuestro compromiso es con la calidad y la satisfacción de nuestros clientes.</p>
+             </div>
+             <div class="footer-section">
+                 <h3>Enlaces Útiles</h3>
+                 <ul>
+                     <li><a href="#home">Inicio</a></li>
+                     <li><a href="#about">Nosotros</a></li>
+                     <li><a href="#services">Servicios</a></li>
+                     <li><a href="#contact">Contacto</a></li>
+                 </ul>
+             </div>
+             <div class="footer-section">
+                 <h3>Contáctanos</h3>
+                 <p><i class="fa fa-phone"></i> +54 123 456 7890</p>
+                 <p><i class="fa fa-envelope"></i> contacto@ejemplo.com</p>
+                 <p><i class="fa fa-map-marker"></i> Calle Falsa 123, Santa Fe, Argentina</p>
+             </div>
+         </div>
+         <div class="footer-bottom">
+             <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+         </div>
+     </footer>
+ 
+     <script src="./js/index.js"></script>
+ </body>
+ </html>
+ 

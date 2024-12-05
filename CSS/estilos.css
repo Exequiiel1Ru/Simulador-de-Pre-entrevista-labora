@@ -1,0 +1,93 @@
+/* Estilos generales */
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa; /* Fondo suave */
+    color: #2c3e50; /* Texto elegante */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Centrar verticalmente el contenido */
+    
+      margin: 0;
+        padding: 0;
+        height: 100%; /* Garantiza que el footer esté correctamente posicionado */
+    }
+    
+
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el título */
+h1 {
+    color: #1d3557; /* Azul profesional oscuro */
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo del botón */
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #457b9d; /* Azul profesional */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px; /* Espacio para separarlo del título */
+}
+
+button:hover {
+    background-color: #1d3557; /* Azul más oscuro */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+/* Estilos para mostrar la tarjeta de resultado */
+#tarjetaResultado {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #eaf0f6; /* Fondo suave para resaltar resultados */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#tarjetaResultado h2 {
+    color: #1a252f;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#tarjetaResultado p {
+    color: #34495e;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Alerta personalizada */
+.alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e63946; /* Rojo alerta profesional */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    text-align: center;
+}
